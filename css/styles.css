@@ -26,10 +26,44 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: var(--primary-txt-light);
+}
+
+/* Header */
+.header {
+  background-color: var(--light-bg);
+}
+
+.logo {
+  font-family: var(--sacondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+}
+
+.logo-accent {
+  color: var(--logo-color);
+}
+
+.nav-link {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-txt-light);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
 }
