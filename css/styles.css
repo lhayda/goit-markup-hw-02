@@ -25,6 +25,19 @@
   --primary-bg-dark: #2F303A;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: var(--main-font);
   font-size: 14px;
@@ -32,6 +45,14 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--primary-txt-light);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
 
 /* Header */
@@ -53,17 +74,61 @@ body {
   color: var(--logo-color);
 }
 
-.nav-link {
-  font-family: var(--main-font);
+.nav-link,
+.auth-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}  
 
+.nav-link {
   color: var(--secondary-txt-light);
 }
 
+.auth-link {
+  color: var(--primary-txt-light);
+}
+
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus,
+.auth-link:hover,
+.auth-link:focus {
   color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--primary-bg-dark);
+}
+
+.hero-tittle {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--primary-txt-dark);
+}
+
+.hero-btn {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  
+
+  background-color: var(--accent-color);
+  color: var(--primary-txt-dark);
+
 }
