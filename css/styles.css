@@ -14,7 +14,7 @@
 
   /* Темна тема тексту */
   --primary-txt-dark: #FFFFFF;
-  --secondary-txt-dark: #ffffff99;
+  --secondary-txt-dark: rgba(255, 255, 255, 0.6);
 
   /* Світла тема фону */
   --primary-bg-light: #E5E5E5;
@@ -141,8 +141,6 @@ body {
   
   background-color: var(--accent-color);
   color: var(--primary-txt-dark);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -180,12 +178,46 @@ body {
 }
 
 .team-profession {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--primary-txt-light);
+}
+
+/* Portfolio */
+
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+
+  background-color: var(--secondary-bg-light);
+  color: var(--secondary-txt-light);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-txt-dark);
+}
+
+.card-tittle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--secondary-txt-light);
+}
+
+.card-description {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
 
 /* Footer */
@@ -199,7 +231,6 @@ body {
 }
 
 .place-link {
-
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -209,14 +240,16 @@ body {
   color: var(--primary-txt-dark);
 }
 
-.footer .auth-link {
+.address-link {
   font-style: normal;
 
   color: var(--secondary-txt-dark);
 }
 
-.footer .auth-link:hover,
-.footer .auth-link:focus {
+.place-link:hover,
+.place-link:focus,
+.address-link:hover,
+.address-link:focus {
   color: var(--accent-color);
 }
 
