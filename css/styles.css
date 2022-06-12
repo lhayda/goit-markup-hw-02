@@ -17,9 +17,8 @@
   --secondary-txt-dark: rgba(255, 255, 255, 0.6);
 
   /* Світла тема фону */
-  --primary-bg-light: #E5E5E5;
+  --primary-bg-light: #FFFFFF;
   --secondary-bg-light: #F5F4FA;
-  --light-bg: #FFFFFF;
 
   /* Темна тема фону */
   --primary-bg-dark: #2F303A;
@@ -59,7 +58,7 @@ body {
 /* Header */
 
 .header {
-  background-color: var(--light-bg);
+  background-color: var(--primary-bg-light);
 }
 
 .logo {
@@ -138,9 +137,11 @@ body {
   align-items: center;
   text-align: center;
   cursor: pointer;
+  border: none;
   
   background-color: var(--accent-color);
   color: var(--primary-txt-dark);
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -158,6 +159,13 @@ body {
   text-transform: uppercase;
 
   color: var(--secondary-txt-light);
+}
+
+.feature-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* Examples */
@@ -188,15 +196,18 @@ body {
 /* Portfolio */
 
 .filter-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
   cursor: pointer;
+  border: none;
 
   background-color: var(--secondary-bg-light);
   color: var(--secondary-txt-light);
+  border-radius: 4px;
 }
 
 .filter-btn:hover,
@@ -227,7 +238,7 @@ body {
 }
 
 .footer .logo-accent {
-  color: var(--light-bg);
+  color: var(--primary-txt-dark);
 }
 
 .place-link {
